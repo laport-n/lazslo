@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-width: 100%;
+  height: calc(100vh);
+  position: absolute;
+  top: 0;
+}
+
+.input {
+  width: 70%;
+  margin-left: auto;
+  padding: 8px;
+  border-radius: 5px;
+  border: solid 1px var(--orange-color);
+}
+
+.containerButton {
+  margin-top: 8px;
+}
+
+.callToAction {
+  font-size: 20px;
+  padding: 7px 12px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--white-color);
+  background-color: var(--orange-color);
+}
+
+.callToAction:hover {
+  cursor: pointer;
+  background-color: var(--indigo-color);
+}
+
+.labelInput {
+  text-align: right;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--indigo-color);
+}
+
+.callLink {
+  text-decoration: none;
+  color: #6f6f6e;
+}
+
+.asterix {
+  font-weight: bold;
+  color: var(--orange-color);
+}
+
+.email {
+  text-decoration: none;
+  color: var(--orange-color);
+  font-weight: bold;
+}
+
+.formInput {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+}
+
+.formulaireContainer {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  float: right;
+  align-items: flex-end;
+  flex-direction: column;
+  border-right: solid 1px #6f6f6e78;
+  padding-right: 40px;
+}
+
+.name {
+  color : var(--orange-color);
+}
+
+.sousTitle {
+  font-size: 28px;;
+  text-align: center;
+  font-weight: bold;
+}
+
+.informationsLibelle {
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  color: var(--indigo-color);
+}
+
+
+.logoText {
+  width: 100%;
+  text-align: center;
+  font-size: 52px;;
+  margin-left: 0 !important;
+  color: var(--indigo-color);
+}
+
+.logo {
+  width: 125px;
+}
+
+.logoContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.informationContainer {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  float: left;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 40px;
+  font-size: 18px;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  background-color: var(--white-color);
+}
+
+.rightContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  min-height: 100%;
+  background-color: var(--white-color);
+}

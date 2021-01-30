@@ -1,0 +1,111 @@
+.navbar {
+    position: relative !important;
+    z-index: 5 !important;
+    min-height: 75px !important;
+    display: flex !important;
+    align-items: center !important;
+    background-color: var(--indigo-color) !important;
+    color: var(--white-color) !important;
+    width: 100% !important;
+    box-shadow: rgba(0,0,0,.11) 0 1px !important ;
+}
+
+.collapse {
+  background-color: var(--orange-color-shade);
+  padding: 8px 15px;
+  border: solid 2px white !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin50Left {
+  margin-left: 50px;
+}
+
+.nav {
+  margin-left: auto !important;
+  margin-right: auto;
+  font-size: 18px !important;
+  padding-bottom: 10px !important;
+  font-weight: bold !important;
+  color: var(--white-color) !important;
+  width: fit-content !important;
+}
+
+.nav:hover {
+  cursor: pointer !important;
+  color: var(--orange-color) !important;
+}
+
+.active {
+  color: var(--orange-color) !important;
+}
+
+.containerLogo {
+  text-align: center;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 70px;
+  align-self: center;
+  margin-right: 10px;
+  font-size: 26px;
+}
+
+.logoText {
+  align-self: center;
+  margin-left: 0 !important;
+  width: 200px;
+}
+
+.name {
+  color : var(--orange-color);
+}
+
+.sousTitle {
+  font-size: 16px;
+  text-align: center;
+}
+
+.margin {
+  margin-left: 15%;
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 0px) {
+  .logo {
+    font-size: 18px;
+    width: 55px;
+  }
+
+  .logoText {
+    width: fit-content;
+  }
+
+  .margin50Left {
+    margin-left: 0;
+  }
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+  .margin50Left {
+    margin-left: 50px;
+  }
+
+  .logo {
+    font-size: 26px;
+    width: 70px;
+  }
+
+  .containerLogo {
+    margin-left: 100px;
+  }
+}

@@ -1,16 +1,41 @@
+:root {
+    --indigo-color: #273854;
+    --orange-color: #E69775;
+    --orange-old-color: #e28860;
+    --tmp: #CFA03D;
+    --white-color: #f5f3f3;
+    --yellow-color: #F1C84E;
+    --yellowdark-color: #CFA03D;
+    --orange-color-shade: #E69775;
+    --orange-old-color-shade: #e2886087;
+    --font-size-paragraph: 17px;
+    --font-size-paragraph-mobile: 20px;
+    --font-size-title: 28px;
+    --font-size-title-mobile: 32px;
+    --indigo-color-shade: #0c3865a8;
+}
+
+@font-face {
+  font-family: 'QuickSand-Regular';
+  font-display: swap ;
+  src: local('QuickSand-Regular'), url('./../public/fonts/static/Quicksand-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'QuickSand-Bold';
+  font-display: swap ;
+  src: local('QuickSand-Bold'), url('./../public/fonts/static/Quicksand-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
 html,
 body {
+  min-height: 100%;
+  top: 0px;
+  color: #6f6f6e;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+    background-color: var(--background-color);
+  font-family: "QuickSand-Regular";
 }

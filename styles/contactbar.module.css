@@ -1,0 +1,90 @@
+.contact {
+  padding: 5px;
+  bottom:0;
+  position: fixed;
+  z-index: 9000;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  width: 100%;
+}
+
+.containerIcon {
+  padding: 10px;
+  background: white;
+  border-radius: 20px;
+  align-self: center;
+  display: flex;
+  margin-left: 10px;
+}
+
+.item {
+  text-decoration: none;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.item:hover {
+  color: var(--indigo-color);
+  cursor: pointer;
+}
+
+.containerCenter {
+}
+
+.hrefIcon:hover{
+  color: var(--indigo-color);
+  cursor: pointer;
+}
+
+.hrefIcon {
+  margin-left: 5px !important;
+  background-color: white !important;
+  color: var(--orange-color) !important;
+  width: 18px;
+  height: 18px;
+}
+
+.contactText {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size:18px;
+  color : var(--primary-color);
+  font-weight: 500 !important;
+}
+
+.item {
+  margin-left: auto;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  color: var(--orange-color);
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 0px) {
+  .label {
+    display: none;
+  }
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+  .label {
+    display: block;
+  }
+}
