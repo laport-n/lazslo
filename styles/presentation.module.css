@@ -240,7 +240,6 @@
 }
 
 .blockquote .text {
-    font-family: 'Abril Fatface', cursive;
     position: relative;
     color: var(--indigo-color);
     font-size: var(--font-size-paragraph);
