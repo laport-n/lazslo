@@ -87,7 +87,7 @@ export default function Contact() {
 
             <div className={contact.informations}>
               <p className={contact.informationsLibelle}>Adresse</p>
-              <a className={contact.address} target="_blank" href="https://www.google.com/maps/place/712b+Cours+Cardinal+Bertrand+de+Montfavet,+84140+Avignon/@43.9295399,4.8726267,17z/data=!3m1!4b1!4m5!3m4!1s0x12b5ede999f99ecf:0xa765630d90730765!8m2!3d43.9295361!4d4.8748154">712 cours Cardinal Bertrand 84140, Montfavet.</a>
+              <a className={contact.address} target="_blank" href="https://www.google.com/maps/place/712c+Cours+Cardinal+Bertrand+de+Montfavet,+84140+Avignon/@43.9295399,4.8726267,17z/data=!3m1!4b1!4m5!3m4!1s0x12b5ede999f99ecf:0xa765630d90730765!8m2!3d43.9295361!4d4.8748154">712 cours Cardinal Bertrand 84140, Montfavet.</a>
 
               <p className={contact.informationsLibelle}>Téléphone portable</p>
               <a href="tel:+33622281564" className={contact.callLink}><b className={contact.asterix}>+33 (0)</b> 6 22 28 15 64</a>

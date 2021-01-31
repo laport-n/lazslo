@@ -12,8 +12,8 @@ import Link from 'next/link'
 export default function ContactUs(){
   return (
     <div className={contactbar.contact}>
-        <a  className={contactbar.item} target="_blank" href="https://www.google.com/maps/place/712b+Cours+Cardinal+Bertrand+de+Montfavet,+84140+Avignon/@43.9295399,4.8726267,17z/data=!3m1!4b1!4m5!3m4!1s0x12b5ede999f99ecf:0xa765630d90730765!8m2!3d43.9295361!4d4.8748154">
-          <span className={contactbar.label}>Adresse - Montfaver, Avignon</span>
+        <a  className={contactbar.item} target="_blank" href="https://www.google.com/maps/place/712c+Cours+Cardinal+Bertrand+de+Montfavet,+84140+Avignon/@43.9295399,4.8726267,17z/data=!3m1!4b1!4m5!3m4!1s0x12b5ede999f99ecf:0xa765630d90730765!8m2!3d43.9295361!4d4.8748154">
+          <span className={contactbar.label}>Adresse - Montfavet, Avignon</span>
           <div className={contactbar.containerIcon}>
             <GeoAltFill className={contactbar.icon} />
           </div>
