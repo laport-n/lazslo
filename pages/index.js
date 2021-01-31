@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import dynamic from 'next/dynamic'
 
-import Head from 'next/head';
-
 import Navbar  from '../components/Navbar.js';
 import ContactBar from '../components/ContactBar.js';
 import Introduction from '../components/Introduction.js';
+import Head from '../components/Head.js';
 
 export default function Index(props) {
 
@@ -32,6 +31,7 @@ export default function Index(props) {
 
   return (
     <div>
+      <Head />
       <Navbar handleLoadingNewComponent={handleLoadingNewComponent}/>
       <CurrentComponent />
     </div>

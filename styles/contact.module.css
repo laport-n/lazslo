@@ -4,9 +4,15 @@
   justify-content: center;
   flex-direction: row;
   min-width: 100%;
-  height: calc(100vh);
+  height: 100%;
   position: absolute;
   top: 0;
+  background-color: var(--white-color);
+}
+
+.brandContainer {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .input {
@@ -34,6 +40,8 @@
 .callToAction:hover {
   cursor: pointer;
   background-color: var(--indigo-color);
+  color: white;
+  text-decoration: none;
 }
 
 .labelInput {
@@ -48,6 +56,31 @@
   color: #6f6f6e;
 }
 
+.callLink:active {
+  font-weight: bold;
+  color: var(--indigo-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.callLink:hover {
+  font-weight: bold;
+  color: var(--indigo-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.address, .validator {
+  color: #6f6f6e;
+}
+
+.address:hover {
+  font-weight: bold;
+  color: var(--indigo-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .asterix {
   font-weight: bold;
   color: var(--orange-color);
@@ -57,6 +90,11 @@
   text-decoration: none;
   color: var(--orange-color);
   font-weight: bold;
+}
+
+.email:hover {
+  text-decoration: none;
+  color: var(--indigo-color);
 }
 
 .formInput {
@@ -105,13 +143,10 @@
   color: var(--indigo-color);
 }
 
-.logo {
-  width: 125px;
-}
-
 .logoContainer {
   width: 100%;
   text-align: center;
+  margin-bottom: inherit;
 }
 
 .informationContainer {
@@ -131,8 +166,8 @@
   align-items: center;
   justify-content: center;
   width: 50%;
-  height: 100%;
-  background-color: var(--white-color);
+  height: fit-content;
+
 }
 
 .rightContainer {
@@ -140,6 +175,182 @@
   align-items: center;
   justify-content: center;
   width: 50%;
-  min-height: 100%;
-  background-color: var(--white-color);
+  height: fit-content;
+}
+
+.titleLeft {
+  text-align: right;
+}
+
+.title {
+  text-align: center;
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 0px) {
+  .container {
+    padding-top: 110px;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .leftContainer {
+    width: 100%;
+    order: 2;
+  }
+
+  .rightContainer {
+    width: 100%;
+    order: 1;
+    height: fit-content;
+  }
+
+  .formulaireContainer {
+    float: inherit;
+    align-items: inherit;
+    border-right: inherit;
+    padding-right: inherit;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    padding-bottom: 30px;
+  }
+
+  .labelInput {
+    text-align: left;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .containerButton {
+    margin-top: 8px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+  }
+
+  .callToAction {
+    width: 100%;
+    text-align: center;
+  }
+
+  .informationContainer {
+    width: 100%;
+    padding-left: inherit;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .logoText {
+    font-size: 42px;
+  }
+
+  .titleFont {
+    font-size: 28px;
+    line-height: 0.8;
+    margin: 0;
+  }
+
+  .logoContainer {
+    margin-bottom: 5px;
+  }
+
+  .sousTitle {
+    font-size: 24px;;
+  }
+
+  .titleLeft {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width : 1300px) {
+  .container {
+    padding-top: 110px;
+    flex-direction: row;
+    height: fit-content;
+  }
+
+  .leftContainer {
+    width: 50%;
+    order: 1;
+    height: 100%;
+    margin-bottom: 16px;
+    margin-top: 20px;
+  }
+
+  .rightContainer {
+    width: 50%;
+    order: 2;
+    height: 100%;
+  }
+
+  .formulaireContainer {
+    float: right;
+    align-items: flex-end;
+    border-right: solid 1px #6f6f6e78;
+    padding-right: 40px;
+    padding-top: inherit;
+    background-color: inherit;
+    padding-bottom: inherit;
+    height: 100%;
+  }
+
+  .labelInput {
+    text-align: right;
+  }
+
+  .input {
+    width: 70%;
+  }
+
+  .containerButton {
+    margin-top: 8px;
+    width: fit-content;
+    justify-content: flex-end;
+  }
+
+  .callToAction {
+    width: fit-content;
+  }
+
+  .informationContainer {
+    width: 100%;
+    padding-left: 40px;
+    font-size: 18px;
+    padding-top: inherit;
+    padding-bottom: inherit;
+  }
+
+  .logo {
+    width: 125px;
+  }
+
+  .logoText {
+    font-size: 52px;;
+  }
+
+  .sousTitle {
+    font-size: 28px;;
+  }
+
+  .titleLeft {
+    text-align: right;
+    color: var(--indigo-color);
+  }
+
 }
