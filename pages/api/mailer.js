@@ -1,6 +1,7 @@
 var nodemailer = require('nodemailer');
 
 export default function handler(req, res){
+  console.log("call mailer DONE");
   const mailInfos = req.body;
   //const user = 'lazslobonot@hotmail.fr';
   //const pass = 'coupet';
