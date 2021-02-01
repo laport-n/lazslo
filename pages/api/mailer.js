@@ -2,10 +2,10 @@ var nodemailer = require('nodemailer');
 
 export default function handler(req, res){
   const mailInfos = req.body;
-  const user = 'lazslobonot@hotmail.fr';
-  const pass = 'coupet';
-  //const user = 'url-render@outlook.com';
-  //const pass = 'BqRd9hjY@567'
+  //const user = 'lazslobonot@hotmail.fr';
+  //const pass = 'coupet';
+  const user = 'url-render@outlook.com';
+  const pass = 'BqRd9hjY@567'
   // create reusable transporter object using the default SMTP transport
   const transporter = nodemailer.createTransport({
       service: 'outlook',
