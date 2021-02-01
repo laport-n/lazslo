@@ -10,12 +10,8 @@ export default function handler(req, res){
   // create reusable transporter object using the default SMTP transport
   const transporter = nodemailer.createTransport({
       service: 'smtp-mail.outlook.com',
-      secureConnection: false,
       port: 465,
-      tls: {
-        ciphers:'SSLv3'
-      },
-      equireTLS:true,
+      secure: true,
       auth: {
         user: user,
         pass: pass
