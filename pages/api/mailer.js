@@ -1,7 +1,7 @@
 var nodemailer = require('nodemailer');
 
 export default function handler(req, res){
-  console.log("call mailer DONE");
+  console.log("call mailer done");
   const mailInfos = req.body;
   //const user = 'lazslobonot@hotmail.fr';
   //const pass = 'coupet';
@@ -27,6 +27,8 @@ export default function handler(req, res){
 
   // send mail with defined transport object
   transporter.sendMail(mailOptions, function(error, info){
+    console.log(error);
+    console.log(info);
     if (!error){
       return res
         .status(200)
