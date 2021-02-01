@@ -18,7 +18,7 @@ export default function ContactUs(){
             <GeoAltFill className={contactbar.icon} />
           </div>
         </a>
-        <a  className={contactbar.item} href="tel:+33676139659">
+        <a  className={contactbar.item} href="tel:+33622281564">
           <span className={contactbar.label}>Téléphone - 06 22 28 15 64</span>
           <div className={contactbar.containerIcon}>
             <TelephoneFill className={contactbar.icon}/>
