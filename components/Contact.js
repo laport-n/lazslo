@@ -37,7 +37,7 @@ export default function Contact() {
 
     if (buttonActive == true && isAllFieldsFilled()){
       setButtonActive(false);
-      const url = "/api/mailer";
+      const url = "http://localhost:3000/api/mailer";
       const mailInfo = {
         name : name,
         email : email,
