@@ -26,6 +26,28 @@
   margin-top: 8px;
 }
 
+.error {
+  color: #DC143C;
+}
+
+.success {
+  color: #66CDAA;
+}
+
+.message {
+  font-size: 18px;
+}
+
+.callToAction:disabled {
+  background-color: #BEBEBE;
+  cursor: inherit;
+}
+
+.callToAction:disabled:hover {
+  background-color: #BEBEBE;
+  cursor: inherit;
+}
+
 .callToAction {
   font-size: 20px;
   padding: 7px 12px;
@@ -34,6 +56,8 @@
   font-weight: bold;
   color: var(--white-color);
   background-color: var(--orange-color);
+  border-color: inherit;
+  border-width: inherit;
 }
 
 .callToAction:hover {

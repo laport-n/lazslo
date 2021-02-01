@@ -96,11 +96,8 @@
 }
 
 .left {
-  background-image: url("../public/assets/images/photographe-professionnel-385.jpg");
   background-repeat: repeat;
   background-size: cover;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   background-position-y: 0;
   position: relative;
   min-height: 1px;
@@ -108,7 +105,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: var(--orange-color-shade);
+  background-color: var(--indigo-color);
   border: solid 4px white;
   width: 50%;
   height: 740px;
@@ -409,7 +406,7 @@
     .sectionNotaire {
       width: 80%;
       border-radius: 8px;
-      padding: 10px 30px;
+      padding: 10px 20px;
       margin-top: 30px;
       margin-bottom: 80px;
     }
@@ -451,7 +448,7 @@
   .sectionNotaire {
     width: 50%;
     border-radius: 8px;
-    padding: 10px 30px;
+    padding: 10px 20px;
   }
 
   .wrapper {

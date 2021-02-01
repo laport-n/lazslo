@@ -11,24 +11,57 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [text, setText] = useState('');
+  const [buttonActive, setButtonActive] = useState(true);
+  const [message, setMessage] = useState({
+              status : 'READY-TO-SEND',
+              text: ''
+            });
 
+
+  const isAllFieldsFilled = () => {
+    if (name.length > 0 && email.length > 0 && subject.length > 0 && text.length > 0) {
+      setMessage({
+                  status : 'READY-TO-SEND',
+                  text: ''
+                });
+      return true;
+    } else  {
+      setMessage({
+                  statuts : 'error',
+                  text: 'Vous devez remplir tous les champs obligatoires pour la prise de contact.'
+                });
+      return false;
+    }
+  }
   const handleSendEmail = async () => {
-    const url = "http://localhost:3000/api/mailer";
-    const mailInfo = {
-      name : name,
-      email : email,
-      subject : subject,
-      text : text
-    };
-    const res = await fetch(url,
-      {
-        method: 'POST',
-        headers: {
-          'Content-type': 'application/json'
-        },
-        body : JSON.stringify(mailInfo)
+
+    if (buttonActive == true && isAllFieldsFilled()){
+      setButtonActive(false);
+      const url = "http://localhost:3000/api/mailer";
+      const mailInfo = {
+        name : name,
+        email : email,
+        subject : subject,
+        text : text
+      };
+      const res = await fetch(url,
+        {
+          method: 'POST',
+          headers: {
+            'Content-type': 'application/json'
+          },
+          body : JSON.stringify(mailInfo)
+        }
+      );
+      const json = await res.json();
+      if (json.status == 'SUCCESS'){
+        setMessage({statuts : 'success', text: "Votre demande de contact a été envoyée avec succès. Nous vous recontacterons dans les plus brefs délais."});
+        setButtonActive(true);
+      } else if (json.status == 'ERROR'){
+        setMessage({statuts : 'error', text: "Une erreur s'est produite lors de la tentative de prise de contact. Nous sommes navrés. Vous pouvez essayer les autres méthodes de contacts. (Téléphone, e-mail etc..)"});
+        setButtonActive(true);
       }
-    );
+    }
   }
 
   return (
@@ -62,8 +95,20 @@ export default function Contact() {
               <textarea value={text} onChange={(e) => setText(e.target.value)} rows="10" className={contact.input} />
             </div>
 
+            { message.text.length > 0 && message.statuts == 'error' &&
+              <div className={contact.messageContainer}>
+                  <p className={contact.message + ' ' + contact.error}>{message.text}</p>
+              </div>
+            }
+
+            { message.text.length > 0 && message.statuts == 'success' &&
+              <div className={contact.messageContainer}>
+                  <p className={contact.message + ' ' + contact.success}>{message.text}</p>
+              </div>
+            }
+
             <div className={contact.containerButton}>
-              <a onClick={handleSendEmail} className={contact.callToAction}>Envoyer</a>
+              <button disabled={!buttonActive} onClick={handleSendEmail} className={contact.callToAction}>Envoyer</button>
             </div>
 
           </div>
