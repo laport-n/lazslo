@@ -16,13 +16,14 @@ export default function HeadLazslo(props){
         <meta content="nicolas-1301@live.fr" name="dc.creator" />
         <meta content="Etude Lazslo bonnot | Notaire à Montavet (Avignon)" name="dc.title" />
         <meta content="2021" name="dc.date" />
-        <meta content="https://www.lazslobonnot.notaires.fr/" name="dc.identifier" />
+        <link rel="canonical" href="https://lazslo-bonnot-notaire-montfavet-avignon.fr/" />
+        <meta content="https://lazslo-bonnot-notaire-montfavet-avignon.fr/" name="dc.identifier" />
         <meta content="FR" name="geo.region" />
         <meta content="Montfavet" name="geo.placename" />
         <meta content="FR" name="DC.Language" />
         <meta content="Etude Lazslo bonnot | Notaire à Montavet (Avignon)" property="og:title" />
         <meta content="Notaire Lazslo BONNOT à Montfavet (Avignon) est une étude notariale qui vous conseille en droit de la famille, droit des affaires, droit immobilier et gestion de patrimoine." property="og:description" />
-        <meta content="https://www.lazslobonnot.notaires.fr/" property="og:url" />
+        <meta content="http://lazslo-bonnot-notaire-montfavet-avignon.fr/" property="og:url" />
         <meta content="website" property="og:type" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Etude Lazslo bonnot | Notaire à Montavet (Avignon)" />
