@@ -11,7 +11,7 @@ export default function handler(req, res){
   const transporter = nodemailer.createTransport({
       service: 'smtp-mail.outlook.com',
       secureConnection: false,
-      port: 587,
+      port: 465,
       tls: {
         ciphers:'SSLv3'
       },
