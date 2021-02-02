@@ -4,11 +4,21 @@
     min-height: 75px !important;
     display: flex !important;
     align-items: center !important;
-    background-color: var(--indigo-color) !important;
     color: var(--white-color) !important;
     width: 100% !important;
     height: 110px;
-    box-shadow: rgba(0,0,0,.11) 0 1px !important ;
+}
+
+.navbarBlue {
+    position: relative !important;
+    z-index: 5 !important;
+    min-height: 75px !important;
+    display: flex !important;
+    align-items: center !important;
+    color: var(--white-color) !important;
+    width: 100% !important;
+    height: 110px;
+    background-color: var(--indigo-color);
 }
 
 .collapse {
@@ -83,6 +93,10 @@
     height: inherit;
   }
 
+  .navbarBlue {
+    height: inherit;
+  }
+
   .logo {
     font-size: 18px;
     width: 55px;
@@ -101,6 +115,9 @@
 /* TABLET LANDSCAPE / DESKTOP */
 @media only screen and (min-width: 1024px) {
   .navbar {
+    height: 110px;
+  }
+  .navbarBlue {
     height: 110px;
   }
 

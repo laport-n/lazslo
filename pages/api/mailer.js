@@ -5,7 +5,7 @@ export default function handler(req, res){
 
   sgMail.setApiKey("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")
   const msg = {
-    from: 'laportenicolasepitech@gmail.com', // sender address
+    from: 'l.bonnot@notaires.fr', // sender address
     to: 'l.bonnot@notaires.fr', // list of receivers
     subject: 'sujet: ' + mailInfos.subject, // Subject line
     text: mailInfos.text, // plaintext body

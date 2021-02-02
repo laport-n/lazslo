@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from 'react';
+
 import introduction from '../styles/introduction.module.css';
 
 import presentation from '../styles/presentation.module.css';
@@ -6,9 +8,17 @@ import Presentation from './Presentation.js';
 import Tarif from './Tarif.js';
 
 export default function Introduction(){
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      setOffset(window.pageYOffset)
+    }
+  }, []);
+
   return (
     <div className={introduction.container}>
-      <ContactBar/>
+      <ContactBar offset={offset} />
 
       <div className={introduction.backgroundContent}>
         <div className={introduction.backgroundImage}></div>
@@ -19,7 +29,7 @@ export default function Introduction(){
             <h1 className={introduction.indexSousTitleText + " " + introduction.noMarginTop  + " " + introduction.noMarginBottom}>Notaire | Conseils</h1>
             <h2 className={introduction.indexIntroductionTitle +  " " + introduction.noMarginTop}>Accompagner et conseiller nos clients à chaque étape clé de leur vie personnelle et professionnelle, tel est le cœur de notre métier.</h2>
           </div>
-          
+
         </div>
       </div>
 

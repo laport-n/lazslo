@@ -17,7 +17,7 @@ export default function NavSite(props) {
   }
 
   return(
-    <Navbar expand="lg" bg="dark" variant="dark" className={navbar.navbar}>
+    <Navbar collapseOnSelect expand="lg" variant="dark" className={currentComponent == INTRODUCTION_COMPONENT ? navbar.navbar : navbar.navbarBlue }>
       <div className={navbar.containerLogo}>
         <img className={navbar.logo} src={"/assets/icons/BLANC.png"}/>
         <div className={navbar.logoText}>
@@ -25,8 +25,8 @@ export default function NavSite(props) {
           <div className={navbar.sousTitle}>NOTAIRE | CONSEILS </div>
         </div>
       </div>
-      <Navbar.Toggle className={navbar.collapse} aria-controls="navbar" />
-        <Navbar.Collapse id="navbar" className={navbar.margin50Left}>
+      <Navbar.Toggle className={navbar.collapse} aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav" className={navbar.margin50Left}>
           <Nav className="mr-auto">
             <Nav.Link onClick={() => handleLinkClick(INTRODUCTION_COMPONENT)}
                className={currentComponent == INTRODUCTION_COMPONENT ? navbar.nav + " " + navbar.active + " " + navbar.margin : navbar.nav + " " + navbar.margin}>
