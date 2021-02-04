@@ -9,13 +9,61 @@
   top: 0;
 }
 
+.containerPannels {
+  z-index: 1;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  background-color: #f5f3f321;
+  border-radius: 8px;
+  margin-top: 117px;
+  height: 82%;
+}
+
+.backgroundImage {
+  z-index: 1;
+  background-color: #000000;
+  opacity: 0.65;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.6s;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.backgroundContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh);
+  min-width: 100%;
+  z-index: 0;
+  background-position-y: -100px;
+  position: relative;
+}
+
+.backgroundContent::before{
+  content:'';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: url("../public/assets/images/notaire_contact.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  height: 100vh;
+}
+
 .brandContainer {
   width: 100%;
   margin-bottom: 10px;
 }
 
 .input {
-  width: 70%;
+  width: 93%;
   margin-left: auto;
   padding: 8px;
   border-radius: 5px;
@@ -71,12 +119,12 @@
   text-align: right;
   margin-bottom: 5px;
   font-weight: bold;
-  color: var(--indigo-color);
+  color: var(--orange-color);
 }
 
 .callLink {
   text-decoration: none;
-  color: #6f6f6e;
+  color: var(--white-color);
 }
 
 .callLink:active {
@@ -88,25 +136,39 @@
 
 .callLink:hover {
   font-weight: bold;
-  color: var(--indigo-color);
+  color: var(--orange-color);
   text-decoration: none;
   cursor: pointer;
 }
 
-.address, .validator {
-  color: #6f6f6e;
+.validator {
+ color: var(--white-color);
+}
+
+.address {
+  color: var(--white-color);
 }
 
 .address:hover {
   font-weight: bold;
-  color: var(--indigo-color);
+  color: var(--orange-color);
   text-decoration: none;
   cursor: pointer;
 }
 
 .asterix {
   font-weight: bold;
-  color: var(--orange-color);
+  color: var(--white-color);
+}
+
+.iframeContainer {
+  display: block;
+  border: 0px;
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 50px;
+  border-radius: 8px;
 }
 
 .email {
@@ -117,7 +179,7 @@
 
 .email:hover {
   text-decoration: none;
-  color: var(--indigo-color);
+  color: var(--white-color);
 }
 
 .formInput {
@@ -136,8 +198,10 @@
   float: right;
   align-items: flex-end;
   flex-direction: column;
-  border-right: solid 1px #6f6f6e78;
   padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: fit-content;
 }
 
 .name {
@@ -154,7 +218,7 @@
   font-weight: bold;
   margin-bottom: 0px;
   margin-top: 10px;
-  color: var(--indigo-color);
+  color: var(--white-color);
 }
 
 
@@ -190,7 +254,11 @@
   justify-content: center;
   width: 50%;
   height: fit-content;
+}
 
+.titleLeftText {
+  color: var(--white-color);
+  text-align: right;
 }
 
 .rightContainer {
@@ -199,6 +267,11 @@
   justify-content: center;
   width: 50%;
   height: fit-content;
+  height: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .titleLeft {
@@ -211,13 +284,28 @@
 
 /* SMARTPHONES PORTRAIT */
 @media only screen and (min-width: 0px) {
+
+  .iframeContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .containerPannels {
+    flex-direction: column;
+    background-color: inherit;
+    border-radius: 8px;
+    margin-top: 240px;
+    height: 100vh;
+    width: 100%;
+  }
   .container {
-    padding-top: 110px;
     flex-direction: column;
     height: fit-content;
   }
 
   .leftContainer {
+    background-color: var(--white-color);
     width: 100%;
     order: 2;
   }
@@ -239,11 +327,11 @@
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: white;
     padding-bottom: 30px;
   }
 
   .labelInput {
+    color: var(--indigo-color);
     text-align: left;
   }
 
@@ -271,6 +359,7 @@
     padding-right: 20px;
     padding-top: 15px;
     padding-bottom: 30px;
+
   }
 
   .logo {
@@ -299,16 +388,41 @@
     text-align: center;
   }
 
+  .titleLeftText {
+    color: var(--indigo-color);
+    text-align: center;
+  }
+
+  .validator {
+   color: var(--gray);
+  }
+
+  .asterix {
+    color: var(--orange-color);
+  }
+
 }
 
 @media only screen and (min-width : 1300px) {
+
+  .containerPannels {
+    z-index: 1;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f3f321;
+    border-radius: 8px;
+    margin-top: 117px;
+    height: 82%;
+  }
+
   .container {
-    padding-top: 110px;
     flex-direction: row;
     height: fit-content;
   }
 
   .leftContainer {
+    background-color: transparent;
     width: 50%;
     order: 1;
     height: 100%;
@@ -319,13 +433,12 @@
   .rightContainer {
     width: 50%;
     order: 2;
-    height: 100%;
+    height: 90%;
   }
 
   .formulaireContainer {
     float: right;
     align-items: flex-end;
-    border-right: solid 1px #6f6f6e78;
     padding-right: 40px;
     padding-top: inherit;
     background-color: inherit;
@@ -334,11 +447,12 @@
   }
 
   .labelInput {
+    color: var(--white-color);
     text-align: right;
   }
 
   .input {
-    width: 70%;
+    width: 93%;
   }
 
   .containerButton {
@@ -353,10 +467,11 @@
 
   .informationContainer {
     width: 100%;
-    padding-left: 40px;
     font-size: 18px;
     padding-top: inherit;
     padding-bottom: inherit;
+    justify-content: center;
+    height: 100%;
   }
 
   .logo {
@@ -374,6 +489,26 @@
   .titleLeft {
     text-align: right;
     color: var(--indigo-color);
+  }
+
+  .iframeContainer {
+    padding-left: 20px;
+    padding-right: 50px;
+    border-radius: 8px;
+  }
+
+  .titleLeftText {
+    color: var(--white-color);
+    text-align: right;
+  }
+
+  .validator {
+   color: var(--white-color);
+  }
+
+  .asterix {
+    font-weight: bold;
+    color: var(--orange-color);
   }
 
 }

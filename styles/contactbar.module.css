@@ -15,18 +15,22 @@
 @keyframes changeBackgroundColorTransparentToOrange {
   from {
     background-color: transparent;
+    padding-bottom: 15px;
   }
   to {
     background-color: var(--orange-color);
+    padding-bottom: 5px;
   }
 }
 
 @keyframes changeBackgroundColorOrangeToTransparent {
   from {
     background-color: var(--orange-color);
+    padding-bottom: 5px;
   }
   to {
     background-color: transparent;
+    padding-bottom: 15px;
   }
 }
 
@@ -34,6 +38,7 @@
 .contactFixed {
   animation: changeBackgroundColorOrangeToTransparent 0.5s;
   padding: 5px;
+  padding-bottom: 15px;
   bottom:0;
   position: fixed;
   z-index: 9000;
@@ -46,10 +51,25 @@
 }
 
 .containerIcon {
-  padding: 10px;
-  background: white;
-  border-radius: 20px;
-  align-self: center;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: solid 2px var(--white-color);
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: 10px;
+}
+
+.containerIconCenter {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: solid 2px var(--white-color);
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
   display: flex;
   margin-left: 10px;
 }
@@ -65,18 +85,28 @@
   color: var(--primary-color);
 }
 
-.item:hover {
+.contactFixed > .item:hover {
+  color: var(--orange-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contactFixed > .hrefIcon:hover{
   color: var(--indigo-color);
   cursor: pointer;
 }
 
-.containerCenter {
+.contact > .item:hover {
+  color: var(--indigo-color);
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.hrefIcon:hover{
+.contact > .hrefIcon:hover{
   color: var(--indigo-color);
   cursor: pointer;
 }
+
 
 .hrefIcon {
   margin-left: 5px !important;
@@ -103,15 +133,30 @@
 }
 
 .icon {
-  width: 18px;
-  height: 18px;
-  color: var(--orange-color);
+  width: 30px;
+  height: 30px;
 }
 
 /* SMARTPHONES PORTRAIT */
 @media only screen and (min-width: 0px) {
   .label {
     display: none;
+  }
+  .containerIcon {
+    margin-left: 0px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .iconCenter {
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
   }
 }
 
@@ -120,5 +165,19 @@
 @media only screen and (min-width: 1024px) {
   .label {
     display: block;
+  }
+  .containerIcon {
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .iconCenter {
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
   }
 }

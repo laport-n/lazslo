@@ -1,77 +1,59 @@
-.navbar {
-    position: relative !important;
-    z-index: 5 !important;
-    min-height: 75px !important;
-    display: flex !important;
-    align-items: center !important;
-    color: var(--white-color) !important;
-    width: 100% !important;
-    height: 110px;
-}
-
-.navbarBlue {
-    position: relative !important;
-    z-index: 5 !important;
-    min-height: 75px !important;
-    display: flex !important;
-    align-items: center !important;
-    color: var(--white-color) !important;
-    width: 100% !important;
-    height: 110px;
-    background-color: var(--indigo-color);
-}
-
-.collapse {
-  background-color: var(--orange-color-shade);
-  padding: 8px 15px;
-  border: solid 2px white !important;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.margin50Left {
-  margin-left: 50px;
-}
-
-.nav {
-  margin-left: auto !important;
-  margin-right: auto;
-  font-size: 18px !important;
-  padding-bottom: 10px !important;
-  font-weight: bold !important;
-  color: var(--white-color) !important;
-  width: fit-content !important;
-}
-
-.nav:hover {
-  cursor: pointer !important;
-  color: var(--orange-color) !important;
-}
-
 .active {
   color: var(--orange-color) !important;
+}
+
+.sepparation {
+  color: var(--orange-color);
+      background: var(--orange-color);
+      color: var(--orange-color);
+      background: var(--orange-color);
+      width: 2px;
+      height: 22px;
+      border-radius: 50px;
+      margin-left: 6px;
+      margin-right: 6px;
+      /* margin-top: auto; */
+      /* margin-bottom: auto; */
+      -webkit-transform: rotate(
+  0deg
+  );
+      -moz-transform: rotate(0deg);
+      transform: rotate(
+  0deg
+  );
+      top: 1px;
+      position: relative;
+      -moz-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+}
+
+.title {
+  font-size: 20px;
+  text-align: left;
+  color: var(--white-color);
 }
 
 .containerLogo {
   text-align: center;
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
 .logo {
-  width: 70px;
   align-self: center;
   margin-right: 10px;
   font-size: 26px;
 }
 
 .logoText {
-  align-self: center;
   margin-left: 0 !important;
-  width: 200px;
+  width: fit-content;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .name {
@@ -79,18 +61,75 @@
 }
 
 .sousTitle {
-  font-size: 16px;
-  text-align: center;
+  font-size: 14px;
+  text-align: left;
+  display: flex;
 }
 
-.margin {
-  margin-left: 15%;
+.item {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.item:hover {
+  color: var(--orange-color);
+  cursor: pointer;
 }
 
 /* SMARTPHONES PORTRAIT */
 @media only screen and (min-width: 0px) {
-  .navbar {
+/*  .navbar {
     height: inherit;
+  } */
+
+  .margin {
+    margin-right: inherit;
+  }
+
+  .navbar {
+      position: relative !important;
+      z-index: 5 !important;
+      min-height: 75px !important;
+      display: flex !important;
+      align-items: center !important;
+      color: var(--white-color) !important;
+      width: 100% !important;
+      height: 110px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    height: fit-content;
+    transform: translateY(-100%);
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+  }
+
+  .burgerContainer {
+    position: inherit;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+  }
+
+  .margin {
+    margin-left: inherit;
   }
 
   .navbarBlue {
@@ -109,6 +148,18 @@
   .margin50Left {
     margin-left: 0;
   }
+  .burgerContainer {
+    display: flex;
+  }
+  .lineBurger {
+    width: 2rem;
+    height: 0.25rem;
+    background: var(--white-color);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
 }
 
 
@@ -117,8 +168,36 @@
   .navbar {
     height: 110px;
   }
+
+  .nav {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    background: transparent;
+    height: fit-content;
+    transform: translateY(0%) !important;
+    padding-top: inherit;
+    text-align: center;
+    width: fit-content !important;
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+    margin-left: 0 !important;
+    margin-right: auto;
+    position: relative !important;
+  }
+
+  .burgerContainer {
+    display: none;
+  }
+
   .navbarBlue {
     height: 110px;
+  }
+
+  .margin {
+    margin-right: 30px;
   }
 
   .margin50Left {
@@ -127,10 +206,22 @@
 
   .logo {
     font-size: 26px;
-    width: 70px;
+    width: 80px;
   }
 
   .containerLogo {
     margin-left: 100px;
+    margin-right: 40px;
+  }
+
+  .navbar {
+      position: relative !important;
+      z-index: 5 !important;
+      min-height: 75px !important;
+      display: flex !important;
+      align-items: center !important;
+      color: var(--white-color) !important;
+      width: 100% !important;
+      height: 150px;
   }
 }
