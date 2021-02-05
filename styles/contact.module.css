@@ -14,7 +14,7 @@
   width: 70%;
   display: flex;
   flex-direction: row;
-  background-color: #f5f3f321;
+  background: #f5f3f321;
   border-radius: 8px;
   margin-top: 117px;
   height: 82%;
@@ -22,7 +22,7 @@
 
 .backgroundImage {
   z-index: 1;
-  background-color: #000000;
+  background: #000000;
   opacity: 0.65;
   transition: background 0.3s, border-radius 0.3s, opacity 0.6s;
   height: 100vh;
@@ -68,6 +68,7 @@
   padding: 8px;
   border-radius: 5px;
   border: solid 1px var(--orange-color);
+  border: solid 1px #E69775;
 }
 
 .containerButton {
@@ -87,12 +88,12 @@
 }
 
 .callToAction:disabled {
-  background-color: #BEBEBE;
+  background: #BEBEBE;
   cursor: inherit;
 }
 
 .callToAction:disabled:hover {
-  background-color: #BEBEBE;
+  background: #BEBEBE;
   cursor: inherit;
 }
 
@@ -103,14 +104,17 @@
   text-transform: uppercase;
   font-weight: bold;
   color: var(--white-color);
-  background-color: var(--orange-color);
+  color: #f5f3f3;
+  background: var(--orange-color);
+  background: #E69775;
   border-color: inherit;
   border-width: inherit;
 }
 
 .callToAction:hover {
   cursor: pointer;
-  background-color: var(--indigo-color);
+  background: var(--indigo-color);
+  background: #273854;
   color: white;
   text-decoration: none;
 }
@@ -120,16 +124,19 @@
   margin-bottom: 5px;
   font-weight: bold;
   color: var(--orange-color);
+  color: #E69775;
 }
 
 .callLink {
   text-decoration: none;
   color: var(--white-color);
+  color: #f5f3f3;
 }
 
 .callLink:active {
   font-weight: bold;
   color: var(--indigo-color);
+  color: #273854;
   text-decoration: none;
   cursor: pointer;
 }
@@ -137,21 +144,25 @@
 .callLink:hover {
   font-weight: bold;
   color: var(--orange-color);
+  color: #E69775;
   text-decoration: none;
   cursor: pointer;
 }
 
 .validator {
  color: var(--white-color);
+ color: #f5f3f3;
 }
 
 .address {
   color: var(--white-color);
+  color: #f5f3f3;
 }
 
 .address:hover {
   font-weight: bold;
   color: var(--orange-color);
+  color: #E69775;
   text-decoration: none;
   cursor: pointer;
 }
@@ -159,6 +170,7 @@
 .asterix {
   font-weight: bold;
   color: var(--white-color);
+  color: #f5f3f3;
 }
 
 .iframeContainer {
@@ -174,12 +186,14 @@
 .email {
   text-decoration: none;
   color: var(--orange-color);
+  color: #E69775;
   font-weight: bold;
 }
 
 .email:hover {
   text-decoration: none;
   color: var(--white-color);
+  color: #f5f3f3;
 }
 
 .formInput {
@@ -206,6 +220,7 @@
 
 .name {
   color : var(--orange-color);
+  color: #E69775;
 }
 
 .sousTitle {
@@ -219,6 +234,7 @@
   margin-bottom: 0px;
   margin-top: 10px;
   color: var(--white-color);
+  color: #f5f3f3;
 }
 
 
@@ -228,6 +244,7 @@
   font-size: 52px;;
   margin-left: 0 !important;
   color: var(--indigo-color);
+  color: #273854;
 }
 
 .logoContainer {
@@ -258,6 +275,7 @@
 
 .titleLeftText {
   color: var(--white-color);
+  color: #f5f3f3;
   text-align: right;
 }
 
@@ -293,7 +311,7 @@
 
   .containerPannels {
     flex-direction: column;
-    background-color: inherit;
+    background: inherit;
     border-radius: 8px;
     margin-top: 240px;
     height: 100vh;
@@ -305,7 +323,8 @@
   }
 
   .leftContainer {
-    background-color: var(--white-color);
+    background: var(--white-color);
+    background: #f5f3f3;
     width: 100%;
     order: 2;
   }
@@ -332,6 +351,7 @@
 
   .labelInput {
     color: var(--indigo-color);
+    color: #273854;
     text-align: left;
   }
 
@@ -390,6 +410,7 @@
 
   .titleLeftText {
     color: var(--indigo-color);
+    color: #273854;
     text-align: center;
   }
 
@@ -399,6 +420,7 @@
 
   .asterix {
     color: var(--orange-color);
+    color: #E69775;
   }
 
   .backgroundContent::before{
@@ -414,7 +436,7 @@
     width: 70%;
     display: flex;
     flex-direction: row;
-    background-color: #f5f3f321;
+    background: #f5f3f321;
     border-radius: 8px;
     margin-top: 117px;
     height: 82%;
@@ -426,7 +448,7 @@
   }
 
   .leftContainer {
-    background-color: transparent;
+    background: transparent;
     width: 50%;
     order: 1;
     height: 100%;
@@ -445,13 +467,14 @@
     align-items: flex-end;
     padding-right: 40px;
     padding-top: inherit;
-    background-color: inherit;
+    background: inherit;
     padding-bottom: inherit;
     height: 100%;
   }
 
   .labelInput {
     color: var(--white-color);
+    color: #f5f3f3;
     text-align: right;
   }
 
@@ -493,6 +516,7 @@
   .titleLeft {
     text-align: right;
     color: var(--indigo-color);
+    color: #273854;
   }
 
   .iframeContainer {
@@ -503,16 +527,19 @@
 
   .titleLeftText {
     color: var(--white-color);
+    color: #f5f3f3;
     text-align: right;
   }
 
   .validator {
    color: var(--white-color);
+   color: #f5f3f3;
   }
 
   .asterix {
     font-weight: bold;
     color: var(--orange-color);
+    color: #E69775;
   }
 
   .backgroundContent::before{

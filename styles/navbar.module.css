@@ -1,41 +1,42 @@
 .active {
   color: var(--orange-color) !important;
+  color: #E69775 !important;
 }
 
 .sepparation {
-  color: var(--orange-color);
-      background: var(--orange-color);
-      color: var(--orange-color);
-      background: var(--orange-color);
-      width: 2px;
-      height: 22px;
-      border-radius: 50px;
-      margin-left: 6px;
-      margin-right: 6px;
-      /* margin-top: auto; */
-      /* margin-bottom: auto; */
-      -webkit-transform: rotate(
+  background: var(--orange-color);
+  background: #E69775;
+  width: 2px;
+  height: 22px;
+  border-radius: 50px;
+  margin-left: 6px;
+  margin-right: 6px;
+  -webkit-transform: rotate(
   0deg
   );
-      -moz-transform: rotate(0deg);
-      transform: rotate(
-  0deg
+  -moz-transform: rotate(0deg);
+  transform: rotate(
+    0deg
   );
-      top: 1px;
-      position: relative;
-      -moz-transition: all 0.6s ease;
-      transition: all 0.6s ease;
+  top: 1px;
+  position: relative;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .title {
   font-size: 20px;
   text-align: left;
   color: var(--white-color);
+  color: #f5f3f3;
 }
 
 .containerLogo {
   text-align: center;
   display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: center;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
@@ -50,7 +51,7 @@
 
 .logoText {
   margin-left: 0 !important;
-  width: fit-content;
+  width: 150px;
   height: fit-content;
   margin-top: auto;
   margin-bottom: auto;
@@ -58,6 +59,7 @@
 
 .name {
   color : var(--orange-color);
+  color: #E69775;
 }
 
 .sousTitle {
@@ -73,14 +75,20 @@
 
 .item:hover {
   color: var(--orange-color);
+  color: #E69775;
   cursor: pointer;
 }
 
 /* SMARTPHONES PORTRAIT */
 @media only screen and (min-width: 0px) {
-/*  .navbar {
-    height: inherit;
-  } */
+
+  .containerLogo {
+    width: fit-content;
+  }
+
+  .itemNavMarginTop {
+    margin-top: 5px;
+  }
 
   .margin {
     margin-right: inherit;
@@ -93,6 +101,7 @@
       display: flex !important;
       align-items: center !important;
       color: var(--white-color) !important;
+      color: #f5f3f3 !important;
       width: 100% !important;
       height: 110px;
   }
@@ -100,9 +109,10 @@
   .nav {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     background: transparent;
-    height: fit-content;
+    height: 100%;
     transform: translateY(-100%);
     padding-top: 100px;
     text-align: center;
@@ -138,7 +148,7 @@
 
   .logo {
     font-size: 18px;
-    width: 55px;
+    height: 55px;
   }
 
   .logoText {
@@ -155,6 +165,7 @@
     width: 2rem;
     height: 0.25rem;
     background: var(--white-color);
+    background: #f5f3f3;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -172,13 +183,13 @@
   .nav {
     display: flex !important;
     flex-direction: row !important;
-    justify-content: center;
+    justify-content: flex-start !important;
     background: transparent;
-    height: fit-content;
+    height: 100%;
     transform: translateY(0%) !important;
     padding-top: inherit;
     text-align: center;
-    width: fit-content !important;
+    width: 100%;
     position: absolute;
     top: inherit;
     left: inherit;
@@ -206,10 +217,11 @@
 
   .logo {
     font-size: 26px;
-    width: 80px;
+    height: 80px;
   }
 
   .containerLogo {
+    width: 350px;
     margin-left: 100px;
     margin-right: 40px;
   }
@@ -221,7 +233,16 @@
       display: flex !important;
       align-items: center !important;
       color: var(--white-color) !important;
+      color: #f5f3f3;
       width: 100% !important;
       height: 150px;
+  }
+
+  .logoText {
+    width: 150px;
+  }
+
+  .itemNavMarginTop {
+    margin-top: inherit;
   }
 }

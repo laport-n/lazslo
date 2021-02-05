@@ -32,7 +32,7 @@ export default function NavSite(props) {
           <span>Notre étude</span>
         </div>
         <div onClick={() => handleLinkClick(CONTACT_COMPONENT)}
-           className={currentComponent == CONTACT_COMPONENT ? navbar.active + " " + navbar.item : navbar.item }>
+           className={currentComponent == CONTACT_COMPONENT ? navbar.active + " " + navbar.item + " " + navbar.itemNavMarginTop : navbar.item + " " + navbar.itemNavMarginTop }>
           <span>Nous contacter</span>
         </div>
       </div>

@@ -7,25 +7,29 @@
   min-height: 60px;
   display: flex;
   align-items: center;
-  background-color: var(--orange-color);
+  background: var(--orange-color);
+  background: #E69775;
   color: var(--white-color);
+  color: #f5f3f3;
   width: 100%;
 }
 
 @keyframes changeBackgroundColorTransparentToOrange {
   from {
-    background-color: transparent;
+    background: transparent;
     padding-bottom: 15px;
   }
   to {
-    background-color: var(--orange-color);
+    background: var(--orange-color);
+    background: #E69775;
     padding-bottom: 5px;
   }
 }
 
 @keyframes changeBackgroundColorOrangeToTransparent {
   from {
-    background-color: var(--orange-color);
+    background: var(--orange-color);
+    background: #E69775;
     padding-bottom: 5px;
   }
   to {
@@ -46,6 +50,7 @@
   display: flex;
   align-items: center;
   color: var(--white-color);
+  color: #f5f3f3;
   width: 100%;
   background-color: transparent;
 }
@@ -55,6 +60,7 @@
   height: 60px;
   background-color: transparent;
   border: solid 2px var(--white-color);
+  border: solid 2px #f5f3f3;
   border-radius: 30px;
   align-items: center;
   justify-content: center;
@@ -67,6 +73,7 @@
   height: 60px;
   background-color: transparent;
   border: solid 2px var(--white-color);
+  border: solid 2px #f5f3f3;
   border-radius: 30px;
   align-items: center;
   justify-content: center;
@@ -82,28 +89,32 @@
   align-items: center;
   text-transform: uppercase;
   font-size: 18px;
-  color: var(--primary-color);
+  color: #f5f3f3;
 }
 
 .contactFixed > .item:hover {
   color: var(--orange-color);
+  color: #E69775;
   cursor: pointer;
   text-decoration: none;
 }
 
 .contactFixed > .hrefIcon:hover{
   color: var(--indigo-color);
+  color: #273854;
   cursor: pointer;
 }
 
 .contact > .item:hover {
   color: var(--indigo-color);
+  color: #273854;
   cursor: pointer;
   text-decoration: none;
 }
 
 .contact > .hrefIcon:hover{
   color: var(--indigo-color);
+  color: #273854;
   cursor: pointer;
 }
 
@@ -112,6 +123,7 @@
   margin-left: 5px !important;
   background-color: white !important;
   color: var(--orange-color) !important;
+  color: #E69775 !important;
   width: 18px;
   height: 18px;
 }
@@ -124,7 +136,6 @@
   justify-content: center;
   text-transform: uppercase;
   font-size:18px;
-  color : var(--primary-color);
   font-weight: 500 !important;
 }
 
