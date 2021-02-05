@@ -66,7 +66,7 @@ export default function Presentation(){
                   <b>Le client est au cœur du projet d’entreprise de l’Étude.</b> À ce titre, nous nous adaptons à chacune de vos attentes et portons une attention toute particulière sur votre situation personnelle et vos projets, afin d’apporter une réponse pertinente à l’ensemble de vos besoins.
                 </p>
                 <p className={presentation.text}>
-                  Nous avons conscience de l'évoultion de notre société et <b>nous mettons tous nos moyens et toute notre énergie pour répondre à la recherche toujours plus grande de réactivité.</b>
+                  Nous avons conscience de l'évolution de notre société et <b>nous mettons tous nos moyens et toute notre énergie pour répondre à la recherche toujours plus grande de réactivité.</b>
                 </p>
               </div>
             </div>
