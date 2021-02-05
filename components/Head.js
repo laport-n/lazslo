@@ -3,12 +3,13 @@ import Head from 'next/head';
 export default function HeadLazslo(props){
   return (
     <div>
+      <html lang={'fr'} />
       <Head>
         <title>Notaire - MONTFAVET / AVIGNON</title>
-        <link rel="shortcut icon" href="/assets/icons/BLEU.png" />
+        <link rel="shortcut icon" href="/assets/icons/BLEU.png" type="image/x-icon" />
         <link rel="canonical" href="https://lazslo-bonnot-notaire-montfavet-avignon.fr/" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta content="Notaire Lazslo BONNOT à Montfavet (Avignon) est une étude notariale qui vous conseille en droit de la famille, droit des affaires, droit immobilier et gestion de patrimoine." name="description" />
         <meta content="notaire montfavet, notaire à montfavet, notaire a montfavet, notaires montfavet, notaire pas cher, notaire, notaires, montfavet, notaire moins cher, notaire avignon, notaire à avignon, notaire a avignon, notaires avignon, notaires, avignon" name="keywords" />
         <meta content="notaire montfavet" name="abstract" />
@@ -29,8 +30,8 @@ export default function HeadLazslo(props){
         <meta name="twitter:title" content="Etude Lazslo bonnot | Notaire à Montavet (Avignon)" />
         <meta name="twitter:description" content="Notaire Lazslo BONNOT à Montfavet (Avignon) est une étude notariale qui vous conseille en droit de la famille, droit des affaires, droit immobilier et gestion de patrimoine." />
         <meta name="twitter:creator" content="nicolas-1301@live.fr" />
-        <meta itemprop="name" content="'Etude Lazslo bonnot | Notaire à Montavet (Avignon)'" />
-        <meta itemprop="description" content="'Notaire Lazslo BONNOT à Montfavet (Avignon) est une étude notariale qui vous conseille en droit de la famille, droit des affaires, droit immobilier et gestion de patrimoine.'" />
+        <meta itemProp="name" content="'Etude Lazslo bonnot | Notaire à Montavet (Avignon)'" />
+        <meta itemProp="description" content="'Notaire Lazslo BONNOT à Montfavet (Avignon) est une étude notariale qui vous conseille en droit de la famille, droit des affaires, droit immobilier et gestion de patrimoine.'" />
       </Head>
     </div>
   );

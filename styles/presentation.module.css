@@ -15,8 +15,8 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 32px;
-  background-color: var(--orange-color);
+  font-size: 25px;
+  background-color: var(--indigo-color);
   padding: 7px 25px;
   border-radius: 8px;
   border: solid 4px white;
@@ -140,7 +140,7 @@
   background-color: white;
   align-items: center;
   margin: 0px 100px 0px -100px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   padding-top: 26px;
   border-radius: 8px;
   height: fit-content;
@@ -151,7 +151,7 @@
   color: var(--indigo-color);
   background-color: white;
   align-items: center;
-  padding: 10px 30px;
+  padding: 10px 20px;
   padding-top: 26px;
   border-radius: 8px;
 }
@@ -214,7 +214,7 @@
   border-radius: 8px;
   margin-top: 80px;
   margin-bottom: 80px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   padding-top: 26px;
   color: var(--indigo-color);
 }
@@ -244,7 +244,7 @@
     margin: 0;
     border: solid 5px white;
     border-radius: 8px;
-    padding: 25px;
+    padding: 10px 15px;
 }
 
 .blockquote .text:after {

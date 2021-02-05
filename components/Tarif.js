@@ -2,7 +2,7 @@ import tarif from '../styles/tarif.module.css';
 
 export default function Tarif(){
   return (
-    <div>
+    <div className={tarif.wrapper}>
 
       <div className={tarif.backgroundContent}>
         <div className={tarif.backgroundImage}></div>

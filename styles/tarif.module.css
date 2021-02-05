@@ -48,7 +48,7 @@
   margin-right: auto;
   background-color: white;
   border-radius: 8px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   padding-top: 0;
 }
 
@@ -59,7 +59,6 @@
   font-size: 46px;
   padding-bottom: 5px;
   margin-top: 0;
-  margin-bottom: 40px;
 }
 
 .text {
@@ -107,8 +106,8 @@
 
 .subTitle {
   margin-top: 1rem;
-  color: var(--orange-color-shade);
-  background-color: var(--white-color);
+  color: var(--white-color);
+  background-color: var(--indigo-color);
   padding: 5px;
 }
 
@@ -116,6 +115,8 @@
 @media only screen and (min-width: 0px) {
   .title  {
     font-size: var(--font-size-title);
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .subTitle {
@@ -143,12 +144,18 @@
   .container {
     width: 100%;
   }
+
+  .wrapper {
+    margin-bottom: 40px;
+  }
 }
 
 /* TABLET LANDSCAPE / DESKTOP */
 @media only screen and (min-width: 1024px) {
   .title  {
     font-size: var(--font-size-title-mobile);
+    margin-bottom: 40px;
+    margin-top: 0px;
   }
 
   .subTitle {
@@ -175,5 +182,9 @@
 
   .container {
     width: 70%;
+  }
+
+  .wrapper {
+    margin-bottom: inherit;
   }
 }
