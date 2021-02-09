@@ -5,7 +5,7 @@ export default function HeadLazslo(props){
     <div>
       <html lang={'fr'} />
       <Head>
-        <title>Notaire - MONTFAVET / AVIGNON</title>
+        <title>Notaire Lazslo BONNOT - MONTFAVET / AVIGNON</title>
         <link rel="shortcut icon" href="/assets/icons/BLEU-144-144.ico" type="image/x-icon" />
         <link rel="canonical" href="https://lazslo-bonnot-notaire-montfavet-avignon.fr/" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
